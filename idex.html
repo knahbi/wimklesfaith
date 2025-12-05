@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Custom Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Custom Blog</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="latest-posts">
+      <h2>Latest Posts</h2>
+      <ul class="post-list">
+        <!-- Add posts manually for now -->
+        <li>
+          <a href="posts/first-post.html">My First Post</a>
+          <span class="date">March 1, 2025</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Welcome to my blog! I write about anything I find interesting.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>
+    // Set current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
